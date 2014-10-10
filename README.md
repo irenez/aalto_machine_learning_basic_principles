@@ -1,12 +1,7 @@
 aalto_machine_learning_basic_principles
 =======================================
 
-T-61.3050 Machine Learning Basic Principles
-Autumn 2014
-
-project repository for the above course 
-
-(1 branch per assignment, whenever coding was needed)
+Exercise 2
 
 The data is exchange rates of euro versus dollar
 from 1999 to 2013, with some additional noise. The data set has 3766 data
