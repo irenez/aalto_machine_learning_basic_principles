@@ -6,4 +6,4 @@ Autumn 2014
 
 project repository for the above course 
 
-(1 branch per assignment)
+(1 branch per assignment, whenever coding was needed)
