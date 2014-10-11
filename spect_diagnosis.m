@@ -27,11 +27,11 @@ w_0 = sum( log(1-mle_p(1,:)) ) + log(1-mle_pr) - sum( log(1-mle_p(2,:)) ) - log(
 
 discr_train = 1 ./(1+exp(w*(x_train') + w_0));
 pred_train = (discr_train > mle_pr);
-err_train = sum(abs(r_train - pred_train'))/100
+err_train = sum(abs(r_train - pred_train'))/100;
 
 discr_test = 1 ./(1+exp(w*(x_test') + w_0));
 pred_test = (discr_test > mle_pr);
-err_test = sum(abs(r_test - pred_test'))/100
+err_test = sum(abs(r_test - pred_test'))/100;
 
 
 % fprintf('The maximum likelihood estimator for p_r is %f\n', mle_pr);
@@ -39,6 +39,3 @@ err_test = sum(abs(r_test - pred_test'))/100
 % fprintf('The parameters of the sigmoid form are w, w_0: '); w, w_0
 % fprintf('The error for the training set is %f\n ', err_train);
 % fprintf('The error for the test set is %f\n ', err_test);
-
-
-% err_train = sum( r(:,) - pred )/100;
