@@ -27,12 +27,13 @@ w_0 = sum( log(1-mle_p(1,:)) ) + log(1-mle_pr) - sum( log(1-mle_p(2,:)) ) - log(
 
 discr_train = 1 ./(1+exp(w*(x_train') + w_0));
 pred_train = (discr_train > 0.5);
-err_train = mean((r_train - pred_train').^2)
+err_train = mean((r_train - pred_train').^2);
 
 discr_test = 1 ./(1+exp(w*(x_test') + w_0));
 pred_test = (discr_test > 0.5);
-err_test = mean((r_test - pred_test').^2)
+err_test = mean((r_test - pred_test').^2);
 
+mle_pr, mle_p, w, w_0, err_train, err_test
 
 % fprintf('The maximum likelihood estimator for p_r is %f\n', mle_pr);
 % fprintf('The maximum likelihood estimator for p_ij is '); mle_p
